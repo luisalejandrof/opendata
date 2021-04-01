@@ -1,0 +1,12 @@
+CREATE TABLE public.clientes
+(
+    "ID_cliente" integer NOT NULL,
+    nro_contrato integer NOT NULL,
+    "Nombre" character varying NOT NULL,
+    "Apellido" character varying NOT NULL,
+    "Fecha_alta" date NOT NULL,
+    PRIMARY KEY ("ID_cliente")
+);
+
+ALTER TABLE public.clientes
+    OWNER to postgres;
