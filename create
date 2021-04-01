@@ -10,3 +10,15 @@ CREATE TABLE public.clientes
 
 ALTER TABLE public.clientes
     OWNER to postgres;
+# Agreguemos unos cuantos registros a esta tabla:
+
+INSERT INTO clientes
+VALUES (2, 3, 'Mariano', 'Hernandez', to_date('28 Ene 2006', 'DD Mon YYYY'))
+VALUES (3, 4, 'Angel', 'Garcia', to_date('28 Ene 2006', 'DD Mon YYYY'))
+VALUES (15236895, 20065, 'Johhan', 'Ospina', to_date('28 Ene 2006', 'DD Mon YYYY'))
+VALUES (13895268, 20066, 'Luis', 'Castro', to_date('28 Ene 2006', 'DD Mon YYYY'))
+VALUES (14965125, 20067, 'Adriana', 'Zerpa', to_date('29 Ene 2006', 'DD Mon YYYY'))
+VALUES (17895369, 20068, 'Hector', 'Quintero', to_date('30 Ene 2006', 'DD Mon YYYY'))
+VALUES (14865214, 200610, 'Mike', 'Raven', to_date('31 Ene 2006', 'DD Mon YYYY'))
+VALUES (13785648, 200712, 'Argenis', 'Carrullo', to_date('12 Feb 2007', 'DD Mon YYYY'))
+VALUES (14985698, 200713, 'Mariana', 'Ledezma', to_date('28 Feb 2007', 'DD Mon YYYY'));
